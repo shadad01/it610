@@ -1,0 +1,3 @@
+blacklisted.zones
+zone "facebook.com" {type master; file "/etc/bind/zones/master/blockeddomains.db";};
+zone "youtube.com" {type master; file "/etc/bind/zones/master/blockeddomains.db";};
