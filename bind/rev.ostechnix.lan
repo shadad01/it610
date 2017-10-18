@@ -1,0 +1,17 @@
+$TTL 86400
+@   IN  SOA     pri.ostechnix.lan. root.ostechnix.lan. (
+        2011071002  ;Serial
+        3600        ;Refresh
+        1800        ;Retry
+        604800      ;Expire
+        86400       ;Minimum TTL
+)
+@       IN  NS          pri.ostechnix.lan.
+@       IN  NS          sec.ostechnix.lan.
+@       IN  PTR         ostechnix.lan.
+pri     IN  A           192.168.1.200
+sec     IN  A           192.168.1.201
+client  IN  A           192.168.1.202
+200     IN  PTR         pri.ostechnix.lan.
+201     IN  PTR         sec.ostechnix.lan.
+202     IN  PTR         client.ostechnix.lan.
