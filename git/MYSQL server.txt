@@ -1,0 +1,24 @@
+﻿
+
+Install mysql 
+sudo apt-get update
+sudo apt-get install mysql-server
+
+Open port TCP http/80 on AWS firewall
+Open port TCP 5666 on AWS firewall
+Install Nagios agent
+apt-get install nagios-nrpe-server nagios-plugins-basic
+
+Start to create automatic backup task, that will run daily and only keep 7 backups at once via bash script.
+
+ 
+
+
+
+Define the command in Nagios
+#mySQL health Command definitation
+define command{
+       command_name   check_mysql_health
+       command_line $USER1$/check_mysql_health -H $ARG1$ --port $ARG2$ --username $ARG3$ --password $ARG4$ --mode $ARG5$
+       }
+

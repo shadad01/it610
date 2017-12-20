@@ -1,0 +1,9 @@
+﻿install nagios with plugins using guide: http://www.itzgeek.com/how-tos/linux/ubuntu-how-tos/install-nagios-4-1-1-ubuntu-16-04.html
+Added firewall rule to accept TCP 5666,443,80,22 from everyone 
+Updated the windows.cfg to monitor CPU load – Common Deliverables CPU Utilization
+Updated windows.cfg to Monitor Diskspace on C drive - Common Deliverables Hard Disk Utilization
+Used: Get Email Notifications from Nagios
+Used https://support.nagios.com/forum/viewtopic.php?f=7&t=9529
+To finally get emails from Nagios alerts.
+
+
